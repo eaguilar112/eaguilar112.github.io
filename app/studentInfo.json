@@ -1,0 +1,32 @@
+[
+  {
+    "firstName": "John",
+    "lastName": "Doe",
+    "dob": "2008-03-15",
+    "grade": 10
+  },
+  {
+    "firstName": "Jane",
+    "lastName": "Smith",
+    "dob": "2007-08-23",
+    "grade": 11
+  },
+  {
+    "firstName": "Emily",
+    "lastName": "Johnson",
+    "dob": "2006-05-11",
+    "grade": 12
+  },
+  {
+    "firstName": "Michael",
+    "lastName": "Brown",
+    "dob": "2009-05-08",
+    "grade": 9
+  },
+  {
+    "firstName": "Hatsune",
+    "lastName": "Miku",
+    "dob": "2007-08-31",
+    "grade": 10
+  }
+]

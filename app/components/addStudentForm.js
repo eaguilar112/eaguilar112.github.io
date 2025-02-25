@@ -1,3 +1,10 @@
+/* 
+File: addStudentForm.js
+Collaborators: Kourosh, Karie Israeli, Erwin Aguilar, Lily Power
+Date Created: 2025-02-24
+Last Modified: 2025-02-24
+*/
+
 'use client';
 import { useState } from 'react';
 
@@ -43,7 +50,7 @@ export default function AddStudentForm({ onAddStudent }) {
     }
   };
 
-  // hnadleSubmit function to handle form submission
+  // handleSubmit function to handle form submission
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -57,7 +64,7 @@ export default function AddStudentForm({ onAddStudent }) {
           <input
             value={formData.firstName}
             onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
-            className={`w-full px-3 py-2 border rounded-md ${errors.firstName ? 'border-red-500' : 'border-gray-300'}`}
+            className={`w-full px-3 py-2 border rounded-md text-gray-700 mb-1 ${errors.firstName ? 'border-red-500' : 'border-gray-300'}`}
             placeholder="John"
           />
 
@@ -75,7 +82,7 @@ export default function AddStudentForm({ onAddStudent }) {
           <input
             value={formData.lastName}
             onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
-            className={`w-full px-3 py-2 border rounded-md ${errors.lastName ? 'border-red-500' : 'border-gray-300'}`}
+            className={`w-full px-3 py-2 border rounded-md text-gray-700 mb-1 ${errors.lastName ? 'border-red-500' : 'border-gray-300'}`}
             placeholder="Doe"
           />
 
@@ -94,7 +101,7 @@ export default function AddStudentForm({ onAddStudent }) {
             type="date"
             value={formData.dob}
             onChange={(e) => setFormData({ ...formData, dob: e.target.value })}
-            className={`w-full px-3 py-2 border rounded-md ${errors.dob ? 'border-red-500' : 'border-gray-300'}`}
+            className={`w-full px-3 py-2 border rounded-md text-gray-700 mb-1${errors.dob ? 'border-red-500' : 'border-gray-300'}`}
             max={new Date().toISOString().split('T')[0]}
           />
 
@@ -113,7 +120,7 @@ export default function AddStudentForm({ onAddStudent }) {
           <select
             value={formData.grade}
             onChange={(e) => setFormData({ ...formData, grade: e.target.value })}
-            className={`w-full px-3 py-2 border rounded-md ${errors.grade ? 'border-red-500' : 'border-gray-300'}`}
+            className={`w-full px-3 py-2 border rounded-md text-gray-700 mb-1 ${errors.grade ? 'border-red-500' : 'border-gray-300'}`}
           >
 
             <option value="">Select Grade</option>
@@ -130,7 +137,7 @@ export default function AddStudentForm({ onAddStudent }) {
 
       <button
         type="submit"
-        className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-md transition-colors"
+        className="block m-auto bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-md transition-colors"
       >
         Add Student
       </button>

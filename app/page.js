@@ -34,6 +34,7 @@ export default function Home() {
         <main className="w-full max-w-4xl bg-white rounded-lg shadow-lg p-6 space-y-8">
           <AddStudentForm onAddStudent={handleAddStudent} />
           <div className="space-y-4">
+            <h1 className="text-black text-center text-2xl font-extrabold border-t-2 border-t-black border-opacity-10 pt-4">Student List</h1>
             {studentInfo.map((student, index) => (
                 <DisplayStudentData key={index} student={student} />
             ))}
